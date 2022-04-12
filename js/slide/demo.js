@@ -8,7 +8,9 @@
  * Copyright 2019, Codrops
  * http://www.codrops.com
  */
-{
+
+ function demo() 
+ {
     const MathUtils = {
         lineEq: (y2, y1, x2, x1, currentVal) => {
             // y = mx + b 

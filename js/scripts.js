@@ -2864,6 +2864,7 @@ Function Load Via Ajax
 		ContactForm();
 		PlayVideo();
 		ContactMap();
+		demo();
 	
 	}//End Load Via Ajax
 	
