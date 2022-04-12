@@ -889,7 +889,7 @@
 		transform: translateY(0px);
 	}
 	
-	.portfolio .item:first-child .item-title::after {
+	/* .portfolio .item:first-child .item-title::after {
 		content: "New";
 		font-family: 'Poppins', sans-serif;
 		font-weight: 300;
@@ -899,7 +899,7 @@
 		margin-left: 10px;
 		color: #FF1B0B;
 		top: -6px;
-	}
+	} */
 	
 	.item-cat {
 		display:block;
