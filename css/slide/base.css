@@ -105,7 +105,11 @@ a:focus {
 	font-family: source-han-serif-tc, serif;
 	position: relative;
 	min-height: 100vh;
-	background-color: #555;
+	background-color: #eecbbe;
+}
+
+.main-content-slide {
+	margin-bottom: 150px;
 }
 
 .frame {
@@ -202,6 +206,7 @@ a:focus {
 	text-indent: 0.25rem;
 	display: block;
 	color: var(--color-content-meta);
+	margin-bottom: 10px;
 }
 
 .dark-mode .content__item-header-meta {
@@ -294,7 +299,7 @@ a:focus {
 }
 
 .grid__item--title {
-	font-size: 50px;
+	font-size: 22px;
 	margin: 0;
 	font-family: source-han-serif-tc, serif;
 	font-weight: 600;
@@ -336,9 +341,9 @@ a:focus {
 	font-size: 2rem;
 	-webkit-text-stroke: 1.5px var(--color-number);
     text-stroke: 1.5px var(--color-number);
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    color: transparent;	
+    /* -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; */
+    color: #fff;	
     line-height: 1;
     margin: 0 0 0.5rem 0;
     font-weight: 700;
@@ -376,14 +381,19 @@ a:focus {
 	font-size: 0.75rem;
 	font-weight: 400;
 	margin: 0.75rem 0 0 0;
-	color: var(--color-caption);
+	color: #fff;
+	bottom: 30px;
+	background-color: rgba(81, 81, 81, 0.8);
+}
+.grid--slideshow figcaption {
+	
 }
 
-.caption::before {
+/* .caption::before {
 	content: '---------';
 	margin: 0 0.5rem 0 0;
 	letter-spacing: -0.15rem;
-}
+} */
 
 .img-wrap,
 .img--content,
@@ -462,21 +472,24 @@ a:focus {
 	}
 	.grid {
 		height: 100vh;
-		grid-template-columns: repeat(3, calc((100% - 36vw) / 3));
-		grid-column-gap: 18vw;
+		/* grid-template-columns: repeat(3, calc((100% - 36vw) / 3));
+		grid-column-gap: 18vw; */
+		grid-template-columns: repeat(3, calc((100% - 20vw) / 3));
+		grid-column-gap: 10vw;
 	}
 	.grid--slideshow {
-		top: 0;
+		/* top: 0; */
+		top: -30px;
 	}
 	.grid--interaction {
 		grid-template-columns: repeat(3, calc(100% / 3));
 		grid-column-gap: 0;
 	}
 	.number {
-		font-size: 4.25vw;
+		font-size: 26px;
 	}
 	.img-wrap {
-		height: 35vw;
+		height: 45vw;
 	}
 	.img-wrap--content {
 		height: 100%;
@@ -510,12 +523,15 @@ a:focus {
 		pointer-events: none;
 	}
 	.content__item-header-title {
-		font-size: 8vw;
+		font-size: 40px;
 	}
 	.content__item-copy {
-		max-width: 240px;
-		justify-self: end;
-		text-align: right;
+		max-width: 500px;
+		/* justify-self: end; */
+		text-align: left;
+	}
+	.content__item-copy p {
+		color: #333;
 	}
 	.grid__item--cursor.grid__item--left::after,
 	.grid__item--cursor.grid__item--right::after,
