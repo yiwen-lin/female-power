@@ -1702,4 +1702,19 @@
 		line-height: 80px;
 	}
 	
-}			
+}	
+
+
+/* mb */
+@media only screen and (max-width: 767px) { 
+	.slide-title-wrapper {
+		margin-bottom: 25%;
+	}
+	.slide-title span {
+		letter-spacing: 16px;
+    	margin-right: -16px;
+	}
+	.slide-title h3 {
+		margin-right: -10px;
+	}
+}

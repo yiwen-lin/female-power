@@ -613,7 +613,7 @@ h4 {
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 28px;
 	margin-left: -1px;
 }
@@ -687,10 +687,11 @@ p.title-has-line::after {
 }
 
 p {
-	font-size: 15px;
-	margin-bottom: 10px;
-	line-height: 28px;
-	color: #777;
+	font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    line-height: 28px;
+    color: #555;
 }
 
 .light-content p {
@@ -843,6 +844,8 @@ a:hover {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	font-weight: 500;
+    font-family: source-han-serif-tc, serif;
 }
 
 .white-section-wrapper,
@@ -1515,7 +1518,7 @@ scale-up .link,
 }
 
 .preloader-intro {
-	font-family: 'Roboto Slab', serif;
+	/* font-family: 'Roboto Slab', serif; */
 	font-weight: 300;
 	position: relative;
 	display: block;
@@ -1998,8 +2001,6 @@ nav.open {
 	}
 
 	.fullscreen-menu .flexnav li a {
-		font-weight: 500;
-		font-family: source-han-serif-tc, serif;
 		font-size: 42px;
 		line-height: 100px;
 		letter-spacing: 4px;
@@ -2666,6 +2667,7 @@ footer .socials-wrap {
 
 .button-wrap.right .icon-wrap {
 	float: right;
+	right: 6px;
 }
 
 #main .text-align-right .button-wrap.right {
@@ -3106,6 +3108,7 @@ nav.open {
 
 	.flexnav li.link {
 		border-bottom: none;
+		line-height: 6;
 	}
 
 	.flexnav li a {
@@ -3335,8 +3338,9 @@ nav.open {
 	}
 
 	.flexnav li a {
-		font-size: 40px;
+		font-size: 30px;
 		line-height: 55px;
+		color: #b06a48;
 	}
 
 	li.buy-item a {
@@ -3585,6 +3589,7 @@ nav.open {
 
 	#logo {
 		left: 20px;
+		top: 20px;
 	}
 
 	.button-wrap.right.menu {
