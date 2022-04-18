@@ -740,7 +740,7 @@
 		border-radius: 5px;
 		cursor:pointer;
 		font-weight: 600;
-		font-family: 'Poppins', sans-serif;
+		/* font-family: 'Poppins', sans-serif; */
 		font-size: 14px;
 		line-height:50px;
 		overflow: hidden;
@@ -1055,9 +1055,9 @@
 		cursor: pointer;
 		padding: 0px;
 		margin-bottom:0;
-		border-top: 1px solid rgba(255,255,255,0.2);
+		/* border-top: 1px solid rgba(255,255,255,0.2); */
 		color: #999;
-		font-family: 'Roboto Slab', serif;
+		/* font-family: 'Roboto Slab', serif; */
 		font-weight:500;	
 		transition:all 0.2s ease 0s;
     	-webkit-transition:all 0.2s ease 0s;
@@ -1083,7 +1083,7 @@
 	}
 	
 	.light-content .accordion dt::before {
-		background: rgba(255,255,255,1);
+		/* background: rgba(255,255,255,1); */
 	}
   
     .accordion dt:hover::before {
@@ -1107,7 +1107,7 @@
 	.light-content .accordion dt span {
 		color:#fff;
 	}
-	
+
 	.accordion .accordion-content {
 		margin-bottom: 0;
 		line-height: 28px;
@@ -1137,8 +1137,8 @@
 		align-items: center;
 		float: none;
 		position: absolute;
-		right: -25px;
-		top: 20px;
+		right: -10px;
+		bottom: 30px;
 	}
 	
 	.acc-button-icon {
@@ -1147,7 +1147,7 @@
 		color: #000;
 		text-align: center;
 		line-height: 30px;
-		font-size: 22px;
+		font-size: 32px;
 	}
 	
 	.light-content .acc-button-icon {
@@ -1270,7 +1270,7 @@
 	
 	input[type="text"], input[type="search"], textarea {
 		color: rgba(0,0,0,1);
-		font-family: 'Poppins', sans-serif;
+		/* font-family: 'Poppins', sans-serif; */
 		font-size: 14px;
 		font-weight: 400;
 		height: 50px;
@@ -1418,7 +1418,7 @@
 		background:transparent;
 		border:none;
 		color:#fff;
-		font-family: 'Poppins', sans-serif;
+		/* font-family: 'Poppins', sans-serif; */
 		font-size: 14px;
 		font-weight: 600;
 		padding-left:30px;
@@ -1860,4 +1860,66 @@
 	}
 		
 }			
-	
+
+
+/* accordion內人物 only mb */
+@media only screen and (min-width: 767px) {
+	.mobile-show {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.mobile-show {
+		display: block;
+	}
+}
+.accordion {
+	font-family: source-han-sans-cjk-tc, roboto, sans-serif;
+	font-weight: 300;
+}
+
+.link {
+	position: relative;
+}
+.link .number {
+	font-family: source-han-serif-tc, serif;
+	font-size: 22px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    letter-spacing: 3px;
+}
+.link .link-text {
+	position: absolute;
+	bottom: 60px;
+	left: 20px;
+	letter-spacing: 2px;
+}
+.link .link-text h2 {
+	font-family: source-han-serif-tc, serif;
+	font-size:50px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.link .link-text span {
+	font-size:16px;
+	font-weight: 500;
+	padding: 0;
+}
+
+.mb__item-header .mb__item-header-meta {
+
+}
+.mb__item-header .mb__item-header-title {
+	font-family: source-han-serif-tc, serif;
+	font-size: 26px;
+    line-height: 1.4;
+	font-weight: 500;
+	/* margin-top: 10px; */
+	margin-bottom: 30px;
+}
+
+.mb__item-copy p {
+	font-size: 17px;
+	margin-bottom: 25px;
+	/* align-items: justify; */
+}
