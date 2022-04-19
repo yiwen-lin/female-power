@@ -529,6 +529,8 @@ a:focus {
 		max-width: 500px;
 		/* justify-self: end; */
 		text-align: left;
+		max-height: 100%;
+		overflow: scroll;
 	}
 	.content__item-copy p {
 		color: #333;
