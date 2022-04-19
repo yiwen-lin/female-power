@@ -97,6 +97,40 @@
 		opacity:0;
 		overflow:visible;
 	}
+
+	/* kv background */
+	.hero-bg-image-1 {
+		background-image: url(../images/01hero.jpg);
+	}
+	.hero-bg-image-2 {
+		background-image: url(../images/02hero.jpg);
+	}
+	.hero-bg-image-3 {
+		background-image: url(../images/03hero.jpg);
+	}
+	.hero-bg-image-4 {
+		background-image: url(../images/04hero.jpg);
+	}
+	.hero-bg-image-5 {
+		background-image: url(../images/05hero.jpg);
+	}
+	@media only screen and (max-width: 767px) {
+		.hero-bg-image-1 {
+			background-image: url(../images/mb-01.jpg);
+		}
+		.hero-bg-image-2 {
+			background-image: url(../images/mb-02.jpg);
+		}
+		.hero-bg-image-3 {
+			background-image: url(../images/mb-03.jpg);
+		}
+		.hero-bg-image-4 {
+			background-image: url(../images/mb-04.jpg);
+		}
+		.hero-bg-image-5 {
+			background-image: url(../images/mb-05.jpg);
+		}
+	}
 	
 	.load-project-page #hero-bg-image, .load-next-project #hero-bg-image, .load-project-thumb-with-title #hero-bg-image {
 		opacity:1!important;
@@ -129,12 +163,14 @@
 		transform: translateY(230px);
 		-webkit-transform: translateY(230px);
 		letter-spacing: 16px;
+		text-indent: 16px;
 	}
 	.hero-title h3 {
 		font-family: source-han-serif-tc, serif;
 		font-weight: 300;
 		font-size: 18px;
 		letter-spacing: 8px;
+		text-indent: 8px;
 		margin-top: 20px;
 		color: #efcabf;
 	}
@@ -158,7 +194,10 @@
 	}
 	
 	.hero-subtitle, .next-hero-subtitle {
-		font-size: 18px;
+		font-size: 20px;
+		letter-spacing: 2px;
+		text-indent: 2px;
+		margin-top: 16px;
 		font-family: source-han-serif-tc, serif;
 		font-weight:500;
 		line-height:30px;
@@ -197,11 +236,11 @@
 	}
 	
 	.light-content .hero-subtitle, .light-content .next-hero-subtitle {
-		color: #f33a3a;
+		color: #b06a48;
 	}
 	
 	.change-header .hero-subtitle, .change-header .next-hero-subtitle {
-		color: #f33a3a!important;
+		color: #b06a48!important;
 	}
 	
 	#hero.has-image .hero-subtitle:before, .text-align-center .hero-subtitle:before {
@@ -552,7 +591,7 @@
 	
 	.hero-title, .next-hero-title {
 		font-size: 48px;
-		line-height: 72px;
+		line-height: 60px;
 	}
 	
 	.hero-subtitle, .next-hero-subtitle {
@@ -569,4 +608,12 @@
 	}
 		
 }			
-	
+
+
+@media only screen and (max-width: 767px) { 
+
+	.hero-title h3 {
+		margin-bottom: 10px;
+	}
+
+}
