@@ -593,17 +593,20 @@ h1.big-title {
 h1 {
 	font-size: 48px;
 	line-height: 60px;
+	font-family: source-han-serif-tc, serif;
 }
 
 h2 {
 	font-size: 36px;
 	line-height: 48px;
+	font-family: source-han-serif-tc, serif;
 }
 
 h3 {
 	font-size: 30px;
 	line-height: 40px;
 	margin-left: -1px;
+	font-family: source-han-serif-tc, serif;
 }
 
 h4 {
@@ -690,12 +693,12 @@ p {
 	font-size: 18px;
     font-weight: 200;
     margin-bottom: 10px;
-    line-height: 28px;
-    color: #555;
+    line-height: 1.7;
+    color: #333;
 }
 
 .light-content p {
-	color: #999;
+	color: #333;
 }
 
 p.no-margins {
@@ -1738,7 +1741,7 @@ nav.open {
 		padding: 0 5px;
 		position: relative;
 		border-left: medium none;
-		font-weight: 600;
+		font-weight: 500;
 		color: #000;
 		font-size: 12px;
 		line-height: 20px;
@@ -2001,8 +2004,8 @@ nav.open {
 	}
 
 	.fullscreen-menu .flexnav li a {
-		font-size: 42px;
-		line-height: 100px;
+		font-size: 36px;
+		line-height: 86px;
 		letter-spacing: 4px;
 		padding: 0;
 		-webkit-transition: all .1s ease-in-out 0s;
@@ -3733,7 +3736,7 @@ nav.open {
 	padding-bottom: 20px;
 	line-height: 2;
 	font-size: 14px;
-	color: #ccc;
+	color: #eee;
 	letter-spacing: 1px;
 }
 
@@ -3749,7 +3752,7 @@ nav.open {
 #footer_bottom #footer_info_wrapper .footer_info_contents a:visited {
 	text-decoration: none;
 	outline: 0;
-	color: #ccc;
+	/* color: #ccc; */
 }
 
 #footer_bottom #footer_info_wrapper .footer_info_contents #copyright {
@@ -3763,74 +3766,11 @@ nav.open {
 	}
 }
 
-
-
-/* -----------------------slider----------------------- */
-
-#slider {
-	position: relative;
-	/* overflow: hidden; */
-	margin: 20px auto 0 auto;
-	border-radius: 4px;
-  }
-  
-  #slider ul {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	height: 200px;
-	list-style: none;
-  }
-  
-  #slider ul li {
-	position: relative;
+/* ---------------------------------------------- */
+.logo-women {
+	width: 320px;
+	margin: 0 auto 50px;
+}
+.logo-women a {
 	display: block;
-	float: left;
-	margin: 0;
-	padding: 0;
-	width: 500px;
-	height: 300px;
-	background: #ccc;
-	text-align: center;
-	line-height: 300px;
-  }
-  
-  a.control_prev, a.control_next {
-	position: absolute;
-	top: 40%;
-	z-index: 999;
-	display: block;
-	padding: 4% 3%;
-	width: auto;
-	height: auto;
-	background: #2a2a2a;
-	color: #fff;
-	text-decoration: none;
-	font-weight: 600;
-	font-size: 18px;
-	opacity: 0.8;
-	cursor: pointer;
-  }
-  
-  a.control_prev:hover, a.control_next:hover {
-	opacity: 1;
-	-webkit-transition: all 0.2s ease;
-  }
-  
-  a.control_prev {
-	border-radius: 0 2px 2px 0;
-  }
-  
-  a.control_next {
-	right: 0;
-	border-radius: 2px 0 0 2px;
-  }
-  
-  .slider_option {
-	position: relative;
-	margin: 10px auto;
-	width: 160px;
-	font-size: 18px;
-  }
-
-/* -----------------------slider end----------------------- */
+}

@@ -884,6 +884,7 @@
 		font-weight: 300;
 		font-size: 18px;
 		letter-spacing:2px;
+		text-indent: 2px;
    		margin-bottom: 12px;
 		/* transform: translateY(20px);
 		-webkit-transform: translateY(20px); */
@@ -937,6 +938,7 @@
 		padding: 6px 20px;
 		border-radius: 50px;
 		letter-spacing: 2px;
+		text-indent: 2px;
 		background-color:rgba(0,0,0,0.4);
 		transition:.3s;
 	}
@@ -1932,6 +1934,7 @@
 	}
 	.mb-block {
 		display: block;
+		font-family: source-han-sans-cjk-tc, roboto, sans-serif;
 	}
 }
 
