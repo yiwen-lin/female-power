@@ -154,14 +154,17 @@
 		transform: translateY(160px);
 		-webkit-transform: translateY(160px);
 		letter-spacing: 16px;
+		text-indent: 16px;
 	}
 	.slide-title h3 {
 		font-family: source-han-serif-tc, serif;
 		font-weight: 300;
 		font-size: 18px;
 		letter-spacing: 8px;
+		text-indent: 8px;
 		margin-bottom: 0px;
-		color: #efcabf;
+		/* color: #efcabf; */
+		color: #b06a48;
 	}
 	
 	.subtitle {
@@ -172,12 +175,12 @@
 		z-index: 10;
 		position:relative;
 		display:block;
-		color: #f33a3a;
+		color: #b06a48;
 		overflow:hidden;
 	}
 	
 	.light-content .subtitle {
-		color: #f33a3a;
+		color: #b06a48;
 	}
 	
 	.subtitle span {
@@ -1706,15 +1709,27 @@
 
 
 /* mb */
+.mb-block {
+	display: none;
+}
 @media only screen and (max-width: 767px) { 
+	.mb-block {
+		display: block;
+	}
 	.slide-title-wrapper {
 		margin-bottom: 25%;
 	}
 	.slide-title span {
 		letter-spacing: 16px;
-    	margin-right: -16px;
+		text-indent: 16px;
 	}
 	.slide-title h3 {
 		margin-right: -10px;
+	}
+	.slide-title .mb-block h5 {
+		letter-spacing:3px;
+		text-indent: 3px;
+		margin-top: 10px;
+		color: #b06a47;
 	}
 }

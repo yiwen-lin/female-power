@@ -14,7 +14,6 @@ Primary use:	Showcase Portfolio
 
 
 /*------------------------------------------------------------------
-
 01. General Styles
 02. Magic Cursor
 03. Page Preloader
@@ -22,7 +21,6 @@ Primary use:	Showcase Portfolio
 05. Main Content 
 06. Footer Elements
 07. Responsive Media Querries
-
 -------------------------------------------------------------------*/
 
 
@@ -3834,3 +3832,20 @@ nav.open {
   }
 
 /* -----------------------slider end----------------------- */
+
+/* -----------------------open popup----------------------- */
+.openPopup {
+	overflow: hidden;
+	height: 100%;
+}
+
+.openPopup .fullscreen-menu {
+	display: none;
+}
+
+.openPopup .main-content-slide {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
