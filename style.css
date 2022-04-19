@@ -1359,7 +1359,7 @@ main {
 @keyframes rotating {
 	0% {
 		-webkit-transform: translate(-14px, -14px)rotate(0deg);
-		transform: translate(-14px, -14px)) rotate(0deg);
+		transform: translate(-14px, -14px) rotate(0deg);
 	}
 
 	95% {

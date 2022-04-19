@@ -8,7 +8,7 @@
  * Copyright 2019, Codrops
  * http://www.codrops.com
  */
-{
+function demo(){
     const MathUtils = {
         lineEq: (y2, y1, x2, x1, currentVal) => {
             // y = mx + b 
@@ -419,7 +419,7 @@
     const revealer = new Revealer(document.querySelector('.revealer__inner'));
     // Initialize the slideshow
     new Slideshow(document.querySelector('.grid--slideshow'));
-
+    
     // Preload all the images in the page
     imagesLoaded(document.querySelectorAll('.img'), {background: true}, () => document.body.classList.remove('loading'));
     
