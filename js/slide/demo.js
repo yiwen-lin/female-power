@@ -396,14 +396,19 @@ function demo(){
             movingSlides.forEach(slide => promises.push(slide[action === 'open' ? 'animateElementsOut' : 'animateElementsIn'](contentItem)));
             
             if ( action === 'open' ) {
+                $('body').addClass('openPopup');
                 contentItem.classList.add('content__item--current');
             }
             Promise.all(promises).then(() => {
                 if ( action === 'close' ) {
+                    $('body').removeClass('openPopup');
+                    
                     contentItem.classList.remove('content__item--current');
                 }
                 this.isAnimating = false;
             });
+
+            
         }
     }
 

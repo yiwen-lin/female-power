@@ -1462,7 +1462,7 @@ Function Floating Lists
 ---------------------------------------------------*/
 
 	function FloatingLists() {
-	
+		
 		if( $('.showcase-list-holder').length > 0 ){	
 			
 			if ($(window).width() < 1024) {
@@ -1675,9 +1675,8 @@ Function Portfolio
 ---------------------------------------------------*/	
 		
 	function Portfolio() {	
-	
-			
-		if( $('.portfolio-wrap').length > 0 ){			
+		
+		if( $('.portfolio-wrap').length > 0 ){
 			
 			
 			if ($("body").hasClass("smooth-scroll")) {

@@ -3834,3 +3834,20 @@ nav.open {
   }
 
 /* -----------------------slider end----------------------- */
+
+/* -----------------------open popup----------------------- */
+.openPopup {
+	overflow: hidden;
+	height: 100%;
+}
+
+.openPopup .fullscreen-menu {
+	display: none;
+}
+
+.openPopup .main-content-slide {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
