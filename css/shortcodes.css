@@ -862,11 +862,15 @@
 	
 	.has-mask {
 		margin-bottom:30px;
+		font-family: source-han-serif-tc, serif;
+	}
+	.has-mask-line {
+		margin-bottom: 0;
 	}
 	
 	.has-mask span {
-		display:inline-block;
-		overflow:hidden;
+		/* display:inline-block;
+		overflow:hidden; */
 	}
 	
 	.has-mask span > span {

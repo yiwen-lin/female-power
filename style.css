@@ -637,7 +637,7 @@ h6 {
 .light-content h4,
 .light-content h5,
 .light-content h6 {
-	color: #fff;
+	/* color: #fff; */
 }
 
 .light-content .white-section h1,
