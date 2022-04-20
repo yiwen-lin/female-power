@@ -121,15 +121,16 @@ a:focus {
 	font-family: source-han-serif-tc, serif;
 	position: relative;
 	min-height: 100vh;
-	background-color: #e2dac6;
+	background-color: #3c3514;
 }
 /* .project02 .main-content {
 	background-color: #eecbbe;
-}
+} */
 .project03 .main-content {
-	background-color: #97dbec;
+	/* background-color: #97dbec; */
+	background-color: #e2dac6;
 }
-.project04 .main-content {
+/* .project04 .main-content {
 	background-color: #e2dac6;
 } */
 

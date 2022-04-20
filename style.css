@@ -638,7 +638,7 @@ h6 {
 .light-content h4,
 .light-content h5,
 .light-content h6 {
-	/* color: #fff; */
+	color: #fff;
 }
 
 .light-content .white-section h1,
@@ -651,7 +651,8 @@ h6 {
 }
 
 .light-content p {
-	color: rgba(255, 255, 255, 0.5);
+	/* color: rgba(255, 255, 255, 0.5); */
+	color: #aaa;
 }
 
 .light-content .white-section p {
@@ -695,9 +696,6 @@ p {
     color: #333;
 }
 
-.light-content p {
-	color: #333;
-}
 
 p.no-margins {
 	margin-bottom: 0;
