@@ -21,7 +21,23 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 :root {
 	font-size: 15px;
 }
-
+.pc-show {
+	--color-text: #5d5d5d;
+	/* --color-bg: #e6e6ea; */
+	--color-link: #838288;
+	--color-link-hover: #000;
+	/* --color-number: #000; */
+	--color-title: #000;
+	--color-caption: #000;
+	--color-content: #000;
+	/* --color-content-bg: var(--color-bg);
+	--color-reveal-bg: var(--color-bg); */
+	color: var(--color-text);
+	/* background-color: var(--color-bg); */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
 /* body {
 	--color-text: #5d5d5d;
 	--color-bg: #e6e6ea;
@@ -105,7 +121,7 @@ a:focus {
 	font-family: source-han-serif-tc, serif;
 	position: relative;
 	min-height: 100vh;
-	background-color: #eecbbe;
+	/* background-color: #eecbbe; */
 }
 
 .main-content-slide {
@@ -213,11 +229,11 @@ a:focus {
 	mix-blend-mode: difference;
 }
 
-.content__item-header-meta::before {
+/* .content__item-header-meta::before {
 	content: '---------';
 	margin: 0 0.5rem 0 0;
 	letter-spacing: -0.15rem;
-}
+} */
 
 .content__item-copy {
 	padding: 2rem;
@@ -299,11 +315,11 @@ a:focus {
 }
 
 .grid__item--title {
-	font-size: 22px;
+	font-size: 60px;
+	color: #fff;
 	margin: 0;
 	font-family: source-han-serif-tc, serif;
 	font-weight: 600;
-	color: var(--color-title);
 }
 
 .grid__item--title span {
@@ -482,8 +498,10 @@ a:focus {
 		top: -30px;
 	}
 	.grid--interaction {
-		grid-template-columns: repeat(3, calc(100% / 3));
-		grid-column-gap: 0;
+		/* grid-template-columns: repeat(3, calc(100% / 3));
+		grid-column-gap: 0; */
+		grid-template-columns: repeat(3, calc((100% - 20vw) / 3));
+		grid-column-gap: 10vw;
 	}
 	.number {
 		font-size: 26px;
@@ -523,7 +541,7 @@ a:focus {
 		pointer-events: none;
 	}
 	.content__item-header-title {
-		font-size: 40px;
+		font-size: 32px;
 	}
 	.content__item-copy {
 		max-width: 500px;
@@ -534,6 +552,10 @@ a:focus {
 	}
 	.content__item-copy p {
 		color: #333;
+		font-weight: 300;
+		font-size: 17px;
+		margin-bottom: 24px;
+		font-family: source-han-sans-cjk-tc, roboto, sans-serif;
 	}
 	.grid__item--cursor.grid__item--left::after,
 	.grid__item--cursor.grid__item--right::after,
