@@ -121,9 +121,9 @@ a:focus {
 	font-family: source-han-serif-tc, serif;
 	position: relative;
 	min-height: 100vh;
-
+	background-color: #e2dac6;
 }
-.project02 .main-content {
+/* .project02 .main-content {
 	background-color: #eecbbe;
 }
 .project03 .main-content {
@@ -131,7 +131,7 @@ a:focus {
 }
 .project04 .main-content {
 	background-color: #e2dac6;
-}
+} */
 
 .main-content-slide {
 	margin-bottom: 150px;
