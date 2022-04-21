@@ -147,8 +147,8 @@
 		display:inline-block;
 		vertical-align: top;
 		width:auto;
-		font-size:100px;
-		line-height:130px;
+		font-size:70px;
+		line-height:100px;
 		overflow:hidden;
 		padding: 0;
 		color:#000;		
@@ -526,7 +526,7 @@
 
 @media only screen and (max-width: 1466px) {
 	
-	.hero-title, .next-hero-title {
+	/* .hero-title, .next-hero-title {
 		font-size: 90px;
 		line-height: 120px;
 	}
@@ -537,7 +537,7 @@
 	
 	#hero-footer {
 		padding: 30px 60px;
-	}
+	} */
 	
 	
 	
@@ -595,7 +595,7 @@
 	}
 	
 	.hero-subtitle, .next-hero-subtitle {
-		font-size: 14px;
+		font-size: 18px;
 		line-height: 30px;
 	}
 	

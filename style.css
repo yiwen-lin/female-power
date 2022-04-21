@@ -906,6 +906,8 @@ a:hover {
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .vc_row.full {
@@ -1411,14 +1413,14 @@ scale-up .link,
 	position: fixed;
 	top: 0;
 	bottom: 0;
-	background: #fff;
+	background: rgba(20, 51, 21, 1);
 	z-index: 800;
 	text-align: center;
 }
 
-.light-content.preloader-wrap {
+/* .light-content.preloader-wrap {
 	background: rgba(20, 51, 21, 1);
-}
+} */
 
 .preloader-wrap .outer {
 	padding: 0px;
@@ -1447,7 +1449,8 @@ scale-up .link,
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 20px;
-	color: #000;
+	/* color: #000; */
+	color: #fff;
 }
 
 .percentage {
@@ -1457,7 +1460,8 @@ scale-up .link,
 	line-height: 20px;
 	width: 30px;
 	height: 100px;
-	color: #000;
+	/* color: #000; */
+	color: #fff;
 	display: table;
 	margin: 0 auto;
 }
@@ -1468,7 +1472,8 @@ scale-up .link,
 	height: 20px;
 	font-size: 12px;
 	line-height: 20px;
-	color: #000;
+	/* color: #000; */
+	color: #fff;
 }
 
 .light-content .percentage,
@@ -1490,21 +1495,23 @@ scale-up .link,
 .loadbar {
 	width: 100%;
 	height: 100%;
-	background: rgba(255, 255, 255, 0.8);
+	/* background: rgba(255, 255, 255, 0.8); */
+	background: rgba(20, 51, 21, 0.8);
 	position: absolute;
 	top: 0px;
 	right: 0;
 	overflow: hidden;
 }
 
-.light-content .loadbar {
+/* .light-content .loadbar {
 	background: rgba(20, 51, 21, 0.8);
-}
+} */
 
 .hold-progress-bar {
 	width: 0%;
 	height: 0px;
-	background: rgba(255, 255, 255, 1);
+	/* background: rgba(255, 255, 255, 1); */
+	background: rgba(20, 51, 21, 1);
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -1512,9 +1519,9 @@ scale-up .link,
 	overflow: hidden;
 }
 
-.light-content .hold-progress-bar {
+/* .light-content .hold-progress-bar {
 	background: rgba(20, 51, 21, 1);
-}
+} */
 
 .preloader-intro {
 	font-weight: 300;
@@ -1522,12 +1529,13 @@ scale-up .link,
 	display: block;
 	font-size: 100px;
 	line-height: 130px;
-	color: #000;
-}
-
-.light-content .preloader-intro {
+	/* color: #000; */
 	color: #fff;
 }
+
+/* .light-content .preloader-intro {
+	color: #fff;
+} */
 
 /*--------------------------------------------------
 	04. Header Elements
@@ -3149,8 +3157,8 @@ nav.open {
 		padding: 10px 0;
 		font-weight: 500;
 		text-transform: none;
-		font-size: 14px;
-		line-height: 14px;
+		font-size: 16px;
+		line-height: 16px;
 		border-top: none;
 		color: #fff;
 		opacity: 0.4;
@@ -3164,7 +3172,7 @@ nav.open {
 
 	li.buy-item a {
 		color: #fff;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 30px;
 	}
 
@@ -3443,7 +3451,7 @@ nav.open {
 	}
 
 	p {
-		font-size: 14px;
+		font-size: 17px;
 	}
 
 	#main-page-content {
@@ -3600,7 +3608,7 @@ nav.open {
 	}
 
 	.flexnav li ul li a {
-		padding: 5px 0;
+		padding: 15px 0;
 	}
 
 	li.buy-item a {
@@ -3770,6 +3778,12 @@ nav.open {
 .logo-women a {
 	display: block;
 }
+
+@media only screen and (max-width: 767px) {
+	.logo-women {
+		width: 100%;
+	}
+}
 /* -----------------------slider----------------------- */
 
 #slider {
@@ -3855,4 +3869,63 @@ nav.open {
 	top: 0;
 	left: 0;
 	z-index: 9999;
+}
+
+
+/* -----------------------report.html----------------------- */
+.portfolio-page {
+	/* background-color: #fff; */
+}
+
+#itemsWrapperLinks {
+	width: calc(100% - 10%);
+	position: relative;
+    margin: 0 auto;
+}
+.report-item {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	z-index: 0;
+	margin-bottom: 80px;
+    padding: 0 30px;
+    width: calc(33%);
+	/* height: 18vw; */
+	vertical-align: top;
+}
+.report-item .item-wrap-image {
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+.report-item .item-wrap-image img {
+	width: 100%;
+}
+.report-item h3 {
+	font-size: 22px;
+	line-height:1.5;
+	margin-bottom: 30px;
+}
+.report-item span {
+	display: inline-block;
+	border: 1px solid #b06a48;
+	border-radius: 50px;
+	padding:4px 30px 6px;
+	margin-right: 16px;
+	color:#b06a48;
+	margin-bottom:10px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	.report-item {
+		width: 100%;
+		margin:0 auto 50px;
+		padding:0 10px;
+	}
+	.report-item h3 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
 }

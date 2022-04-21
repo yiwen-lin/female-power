@@ -1033,6 +1033,9 @@
 		margin-left: -1px;
 		margin-bottom:-1px;
 	}
+	.clients-table li a {
+		display: block;
+	}
 	
 	.light-content .clients-table li {
 		/* border: 1px solid #222; */
@@ -1040,7 +1043,7 @@
 	
 	.clients-table li img {
 		margin:0 auto;
-		opacity:0.7;
+		/* opacity:0.7; */
 		transition: all 0.2s ease 0s;
 		-webkit-transition: all 0.2s ease 0s;
 	}
@@ -1049,6 +1052,15 @@
 		opacity:1;
 	}	
 	
+	.media.clients-table {
+		margin:0 auto;
+	}
+	.media.clients-table li {
+		display: inline-block;
+		float: none;
+		margin: 20px 60px;
+	}
+
 	
 /*--------------------------------------------------
 	Accordion
