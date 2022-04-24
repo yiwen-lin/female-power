@@ -656,7 +656,7 @@ h6 {
 }
 
 .light-content .white-section p {
-	color: #777;
+	color: #ddd;
 }
 
 .title-has-line {
@@ -691,7 +691,7 @@ p.title-has-line::after {
 p {
 	font-size: 18px;
     font-weight: 200;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     line-height: 1.7;
     color: #333;
 }
@@ -778,7 +778,8 @@ a:hover {
 }
 
 .two_third {
-	width: 65.33% !important;
+	/* width: 65.33% !important; */
+	width: 72% !important;
 }
 
 .three_fifth {
@@ -3770,7 +3771,19 @@ nav.open {
 	}
 }
 
-/* ---------------------------------------------- */
+/* ---------------------start------------------------- */
+
+.op1 span,
+.last p span {
+	display: block;
+}
+.point-s {
+	font-weight: 400;
+	color:#b06a48;
+	letter-spacing: 2px;
+	font-size: 17px;
+}
+
 .logo-women {
 	width: 320px;
 	margin: 0 auto 50px;
@@ -3782,6 +3795,9 @@ nav.open {
 @media only screen and (max-width: 767px) {
 	.logo-women {
 		width: 100%;
+	}
+	.last p span {
+		display: inline-block;
 	}
 }
 /* -----------------------slider----------------------- */

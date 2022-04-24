@@ -1023,7 +1023,7 @@
 	.clients-table li {
 		display: block;
 		float: left;
-		width: 25%;
+		width: 20%;
 		min-height: 30px;
 		/* border: 1px solid #ddd; */
 		box-sizing: border-box;
@@ -1058,7 +1058,7 @@
 	.media.clients-table li {
 		display: inline-block;
 		float: none;
-		margin: 20px 60px;
+		margin: 20px 40px;
 	}
 
 	
