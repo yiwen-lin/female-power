@@ -3,8 +3,6 @@ window.onload = function() {
     window.fbEmail = '';
     window.fbId = '';
     window.fbLogin = false;
-
-    // getFbData();
 }
 
 // This is called with the results from from FB.getLoginStatus().
@@ -18,19 +16,16 @@ function statusChangeCallback(response) {
 // This function is called when someone finishes with the Login
 // Button.  See the onlogin handler attached to it in the sample
 // code below.
-function checkLoginState(story = '') {
-    if ('' != story && true === window.fbLogin) {
-        toSave(story);
-    } else {
-        FB.login(function(response) {
-            FB.getLoginStatus(function(response) {
-                statusChangeCallback(response);
-            });
-        }, {
-            scope: 'email',
-            auth_type: 'rerequest'
-        });
-    }
+function checkLoginState(story = '', target) {
+	var toCheck = function () {
+		if ('' != story && true === window.fbLogin) {
+			_voteEnd(target);
+			toSave(story, target);
+		} else {
+			toFbLogin();
+		}
+	}
+	getFbData(toCheck);
 }
 
 window.fbAsyncInit = function() {
@@ -55,9 +50,19 @@ window.fbAsyncInit = function() {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+function toFbLogin() {
+	FB.login(function(response) {
+		FB.getLoginStatus(function(response) {
+			statusChangeCallback(response);
+		});
+	}, {
+		scope: 'email',
+		auth_type: 'rerequest'
+	});
+}
 // Here we run a very simple test of the Graph API after login is
 // successful.  See statusChangeCallback() for when this call is made.
-function getFbData() {
+function getFbData(successFn = function(){}) {
     FB.api('/me/permissions', function(response) {
     });
 
@@ -67,11 +72,15 @@ function getFbData() {
             window.fbEmail = response.email;
             window.fbId = response.id;
             window.fbLogin = true;
-        }
+			
+			successFn();
+        } else {
+			toFbLogin();
+		}
     });
 }
 
-function toSave(story) {
+function toSave(story, target) {
     if ('' === window.fbId || '' === window.fbName || '' === window.fbEmail) return;
 
     let url = 'https://script.google.com/macros/s/AKfycbx9xCwh1w3MgvTIzbFzWnM7rzrp7vSOytyBga34W--zVVMGdWclXC_CivdlKbiJ9j3f_Q/exec';
@@ -96,16 +105,15 @@ function toSave(story) {
         },
         success: function (res) {
             if (true == res.isSuccess && '' != res.no) {
-                _voteEnd();
                 if (confirm('恭喜您投票成功，今日投票序號為 ' + res.no + '\n要分享至FB嗎?')) {
                     window.open('https://www.facebook.com/sharer.php?u=' + SHARE_LINK_URL + '&quote=' + SHARE_LINK_TEXT);
                 }
             } else {
                 alert('今天已參加過投票，請隔日再蒞臨參加。');
-                _voteEnd();
             }
         },
         complete: function () {
+			target.html('今日已投票')
         },
         error: function (res) {
         }
@@ -113,17 +121,18 @@ function toSave(story) {
 }
 
 $('[data-js="toVote"]').on('click', function () {
+	let target = $(this);
     let story = $(this).data('id');
     let type = $(this).attr('data-type');
 
     if ('end' == type) {
         alert('今天已參加過投票，請隔日再蒞臨參加。');
-        _voteEnd();
+        _voteEnd(target);
     } else if ((undefined !== story && '' != story)) {
-        checkLoginState(story);
+        checkLoginState(story, target);
     }
 });
 
-function _voteEnd() {
-    $('[data-js="toVote"]').attr('data-type', 'end').html('今日已投票');
+function _voteEnd(target) {
+    target.attr('data-type', 'end');
 }
