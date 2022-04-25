@@ -575,10 +575,15 @@
                             </div> 
                             <!--/Project Navigation -->
 
+                            <!-- SweetAlert 彈跳視窗 -->
+                            <button id="demo">Demo</button>
+
                         </div>
                         <!--/Main Content -->
                     </div>
                     <!--/Main -->
+
+             
 
 
                     <!-- Footer -->
@@ -651,13 +656,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js'></script>
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
     <script src="js/clapatwebgl.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/poll/scripts.js"></script>
 
+    <!-- SweetAlert  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        document.getElementById("demo").addEventListener("click",function(){
+        swal({
+            title: "投票成功",
+            text: "分享到FB，讓女力故事激勵更多人",
+            icon: "success",
+            buttons: true
+        });
+        });
+    </script>
 
 
 </body>

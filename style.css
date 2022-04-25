@@ -3964,22 +3964,15 @@ nav.open {
 	position: relative;
 	/* border: 1px solid #fff; */
     display: block;
-    height: 180px;
+    height: 200px;
 	padding: 160px 0 60px;
 	text-align: center;
 	font-family: source-han-serif-tc, serif;
 	font-weight: 300;
-	font-size: 52px;
+	font-size: 44px;
 	line-height:1.5;
 	color: #c8b1a1;
 }
-
-/* .h1 {
-	position: relative;
-	font-size: 3em;
-	font-weight:300;
-	color:black; 
-} */
 
 .words {
 	/* display: inline-block; */
@@ -3997,7 +3990,7 @@ nav.open {
 	display: inline-block;
 	content: " ”";
 	position: absolute;
-	bottom: 0;
+	bottom: -20px;
 	right: 10px;
 }
 
@@ -4005,35 +3998,48 @@ nav.open {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 84%;
+    margin-left: 8%;
 	opacity: 0;
 	overflow: hidden;
-	animation: change-text 20s ease-in infinite;
+	animation: change-text 40s ease-in infinite;
 }
 
 .words span:nth-child(1) {
 	animation-delay: 0s;
 }
-
 .words span:nth-child(2) {
 	animation-delay: 4s;
 }
-
 .words span:nth-child(3) {
 	animation-delay: 8s;
 }
-
 .words span:nth-child(4) {
 	animation-delay: 12s;
 }
 .words span:nth-child(5) {
 	animation-delay: 16s;
 }
+.words span:nth-child(6) {
+	animation-delay: 20s;
+}
+.words span:nth-child(7) {
+	animation-delay: 24s;
+}
+.words span:nth-child(8) {
+	animation-delay: 28s;
+}
+.words span:nth-child(9) {
+	animation-delay: 32s;
+}
+.words span:nth-child(10) {
+	animation-delay: 36s;
+} 
 
 @keyframes change-text {
 	0% {
 		opacity: 0;
-		transform: translateY(-20px);
+		transform: translateY(0px);
 	}
 
 	2% {
@@ -4041,18 +4047,32 @@ nav.open {
 		transform: translateY(0px);
 	}
 
-	18% {
+	10% {
 		opacity: 1;
 		transform: translateY(0px);
 	}
 
-	20% {
+	12% {
 		opacity: 0;
-		transform: translateY(20px);
+		transform: translateY(0px);
 	}
 
 	100% {
 		opacity: 0;
-		transform: translateY(20px);
+		transform: translateY(0px);
 	}
 }
+/* -----------------------animate end----------------------- */
+
+
+button#demo {
+	display: block;
+	margin: 20px;
+	padding: 10px 30px;
+	font-size: 20px;
+	color: white;
+	background-color: #4ebeba;
+	border: none;
+	border-radius: 5px;
+	
+  } 
