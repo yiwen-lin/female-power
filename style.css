@@ -1358,6 +1358,10 @@ main {
 	transition: opacity 0.2s ease-in-out 0s;
 }
 
+.show-loader #ball-loader p {
+	display: block;
+}
+
 @keyframes rotating {
 	0% {
 		-webkit-transform: translate(-14px, -14px)rotate(0deg);
