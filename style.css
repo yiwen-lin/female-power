@@ -3945,3 +3945,69 @@ nav.open {
 	}
 
 }
+
+/* -----------------------animate----------------------- */
+
+.h1 {
+	position: relative;
+	font-size: 3em;
+	font-weight:300;
+	color:black;
+}
+
+.words {
+	display: inline-block;
+	color: #cc1;
+}
+
+.words span {
+	font-weight:900;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	overflow: hidden;
+	animation: change-text 8s linear infinite;
+}
+
+.words span:nth-child(1) {
+	animation-delay: 0s;
+}
+
+.words span:nth-child(2) {
+	animation-delay: 2s;
+}
+
+.words span:nth-child(3) {
+	animation-delay: 4s;
+}
+
+.words span:nth-child(4) {
+	animation-delay: 6s;
+}
+
+@keyframes change-text {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	2% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	18% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	20% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+}
