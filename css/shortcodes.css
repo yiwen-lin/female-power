@@ -1054,6 +1054,7 @@
 	
 	.media.clients-table {
 		margin:0 auto;
+		text-align: center;
 	}
 	.media.clients-table li {
 		display: inline-block;

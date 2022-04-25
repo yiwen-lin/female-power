@@ -652,7 +652,7 @@ h6 {
 
 .light-content p {
 	/* color: rgba(255, 255, 255, 0.5); */
-	color: #aaa;
+	color: #ccc;
 }
 
 .light-content .white-section p {
@@ -2948,8 +2948,8 @@ nav.open {
 	}
 
 	.has-mask {
-		margin-bottom: 0px;
-	}
+		/* margin-bottom: 0px;*/
+	} 
 
 	.row_padding_left {
 		padding-left: 40px;
@@ -3777,13 +3777,25 @@ nav.open {
 .last p span {
 	display: block;
 }
+.op1 p {
+	letter-spacing:2px;
+	font-weight: 300;
+	margin-bottom: 36px;
+}
 .point-s {
 	font-weight: 400;
 	color:#b06a48;
 	letter-spacing: 2px;
 	font-size: 17px;
 }
-
+.border-link {
+	font-weight: 200;
+	display:inline-block;
+	border-bottom: 1px solid #999;
+}
+.border-link a {
+	color:#999;
+}
 .logo-women {
 	width: 320px;
 	margin: 0 auto 50px;
@@ -3919,13 +3931,14 @@ nav.open {
 .report-item h3 {
 	font-size: 22px;
 	line-height:1.5;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .report-item span {
 	display: inline-block;
 	border: 1px solid #b06a48;
 	border-radius: 50px;
-	padding:4px 30px 6px;
+	padding: 4px 20px 6px;
+    font-size: 14px;
 	margin-right: 16px;
 	color:#b06a48;
 	margin-bottom:10px;
@@ -3947,26 +3960,55 @@ nav.open {
 }
 
 /* -----------------------animate----------------------- */
+.animate-block {
+	position: relative;
+	/* border: 1px solid #fff; */
+    display: block;
+    height: 180px;
+	padding: 160px 0 60px;
+	text-align: center;
+	font-family: source-han-serif-tc, serif;
+	font-weight: 300;
+	font-size: 52px;
+	line-height:1.5;
+	color: #c8b1a1;
+}
 
-.h1 {
+/* .h1 {
 	position: relative;
 	font-size: 3em;
 	font-weight:300;
-	color:black;
-}
+	color:black; 
+} */
 
 .words {
+	/* display: inline-block; */
+	position: relative;
+	height: 100%;
+}
+.words::before {
 	display: inline-block;
-	color: #cc1;
+	content: " “";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.words::after {
+	display: inline-block;
+	content: " ”";
+	position: absolute;
+	bottom: 0;
+	right: 10px;
 }
 
 .words span {
-	font-weight:900;
 	position: absolute;
 	top: 0;
+	left: 0;
+	width: 100%;
 	opacity: 0;
 	overflow: hidden;
-	animation: change-text 8s linear infinite;
+	animation: change-text 20s ease-in infinite;
 }
 
 .words span:nth-child(1) {
@@ -3974,15 +4016,18 @@ nav.open {
 }
 
 .words span:nth-child(2) {
-	animation-delay: 2s;
-}
-
-.words span:nth-child(3) {
 	animation-delay: 4s;
 }
 
+.words span:nth-child(3) {
+	animation-delay: 8s;
+}
+
 .words span:nth-child(4) {
-	animation-delay: 6s;
+	animation-delay: 12s;
+}
+.words span:nth-child(5) {
+	animation-delay: 16s;
 }
 
 @keyframes change-text {
