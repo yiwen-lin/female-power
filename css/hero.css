@@ -221,6 +221,7 @@
 	.next-hero-subtitle span {
 		position:relative;
 		display:block;
+		padding-left: 10px;
 	}
 	
 	.load-next-project .hero-title span, .load-next-page .hero-title span {

@@ -232,7 +232,7 @@
 
                         <!-- Main Content -->
                         <div id="main-content">
-                            <div id="main-page-content" style="background-color: #fff4e5;">
+                            <div id="main-page-content" style="background-color: #28312e;">
 
                                 <!-- Row -->
                                 <div class="vc_row row_padding_top row_padding_bottom small">
@@ -240,10 +240,8 @@
                                     <h2 class="has-mask has-mask-line" data-delay="0">喝一杯咖啡，讀一個故事</h2>
                                     <h2 class="has-mask" data-delay="0">選出您的最愛，傳遞大地女力</h2>
                                     
-                                    <p class="has-animation" data-delay="100">即日起至 2022.05.18 選出您最愛的故事，每日前100名完成投票者，我們請您喝一杯咖啡。<br>
-                                        即日起至 2022.05.31 每日由參與投票的使用者中再抽出一名幸運兒，可獲得一組「嫄」原創飾品。
-                                        </p>
-
+                                    <p class="has-animation" data-delay="100">即日起至 2022.05.18 選出您最愛的故事，每日前100名完成投票者，我們請您喝一杯咖啡；2022.05.31 前，每日由所有參與投票者中再抽出一名幸運兒，可獲得一組「嫄」原創飾品。</p>
+                                    <h6 class="border-link"><a href="https://docs.google.com/document/d/e/2PACX-1vSeZ03AGOD11eHXeAbFe1mXGVnXSWGeHMJvgYHD13iaKM4WwYKi2p5xulWImW6pHL-XTUSVmsxNA4WI/pub" target="_blank">詳細活動辦法</a></h6>
                                     <hr>
                                     <!-- <div class="one_half">
 
@@ -549,6 +547,8 @@
 
                                     <hr>
                                     <hr>
+                                    <hr>
+                                    <hr>
 
                                 </div>
                                 <!--/Row -->
@@ -566,7 +566,7 @@
                                             <div class="page-title-wrapper has-animation text-align-center">
                                                 <a class="page-title next-ajax-link-page disable-drag" data-type="page-transition" data-firstline="Next" data-secondline="Page" href="about.html">
                                                     <div class="next-hero-title"><span>女力行動</span></div>
-                                                    <div class="next-hero-subtitle mb-block"><span>假字假字假字假字cta →</span></div>
+                                                    <div class="next-hero-subtitle mb-block"><span>前往頁面 →</span></div>
                                                 </a>
                                             </div>
                                         </div>                   
@@ -575,14 +575,19 @@
                             </div> 
                             <!--/Project Navigation -->
 
+                            <!-- SweetAlert 彈跳視窗 -->
+                            <button id="demo">Demo</button>
+
                         </div>
                         <!--/Main Content -->
                     </div>
                     <!--/Main -->
 
+             
+
 
                     <!-- Footer -->
-                    <footer class="hidden">
+                    <footer class="hidden" style="background-color: #e0b1a0;">
                         <div id="footer-container">
                             <div id="backtotop" class="button-wrap left">
                                 <div class="icon-wrap parallax-wrap">
@@ -617,7 +622,7 @@
 
                 <div id="app"></div>
                 <!-- 整個背景色在這 -->
-                <div class="next-project-image-wrapper" style="background-color: #e0b1a0;">
+                <div class="next-project-image-wrapper" style="background-color: #28312e;">
                     <div class="next-project-image">
                         <div class="next-project-image-bg"></div>
                     </div>
@@ -651,13 +656,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js'></script>
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
     <script src="js/clapatwebgl.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/poll/scripts.js"></script>
 
+    <!-- SweetAlert  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        document.getElementById("demo").addEventListener("click",function(){
+        swal({
+            title: "投票成功",
+            text: "分享到FB，讓女力故事激勵更多人",
+            icon: "success",
+            buttons: true
+        });
+        });
+    </script>
 
 
 </body>
