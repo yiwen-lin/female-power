@@ -24,7 +24,7 @@ $(document).ready(function() {
 	var path = location.pathname;
 	var directories = path.split("/");
 	var lastDirecotry = directories[(directories.length - 1)];
-	if (lastDirecotry == 'project02.html' || 'project03.html' || 'project04.html') {
+	if (lastDirecotry === 'project02.html' || lastDirecotry === 'project03.html' || lastDirecotry === 'project04.html') {
 		demo();
 	}
 });
@@ -221,13 +221,13 @@ Function Page Load
 									$('body').removeClass("load-next-project");
 									$('body').addClass("header-visible");
 									$('#showcase-holder').removeClass("disabled");
-								} , 1600 );
+								} , 0 );
 								
 								setTimeout( function(){	
 									$('body').removeClass("show-loader")
-								} , 800 );	
+								} , 0 );	
 								
-							} , 600 );
+							} , 0 );
 						},
 					waitForAll: true
 				});
@@ -530,7 +530,7 @@ Function Lazy Load
 				$('body').removeClass('loading')
 				setTimeout( function(){	
 					$('body').removeClass('hidden').removeClass('scale-up').removeClass('scale-none');
-				} , 1500 );
+				} , 0 );
 			},
 			waitForAll: true
 		});	
@@ -2849,7 +2849,6 @@ Function Load Via Ajax
 ---------------------------------------------------*/	
 		
 	function LoadViaAjax() {		
-		
 		FirstLoad();
 		ScrollEffects();
 		PageLoadActions();		
@@ -2871,7 +2870,7 @@ Function Load Via Ajax
 		var path = location.pathname;
 		var directories = path.split("/");
 		var lastDirecotry = directories[(directories.length - 1)];
-		if (lastDirecotry == 'project02.html' || 'project03.html' || 'project04.html') {
+		if (lastDirecotry === 'project02.html' || lastDirecotry === 'project03.html' || lastDirecotry === 'project04.html') {
 			demo();
 		}
 	}//End Load Via Ajax
