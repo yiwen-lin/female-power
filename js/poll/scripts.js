@@ -17,7 +17,7 @@ function statusChangeCallback(response) {
 // Button.  See the onlogin handler attached to it in the sample
 // code below.
 function checkLoginState(story = '', target) {
-	var toCheck = function () {
+	function toCheck() {
 		if ('' != story && true === window.fbLogin) {
 			_voteEnd(target);
 			toSave(story, target);
@@ -25,7 +25,7 @@ function checkLoginState(story = '', target) {
 			toFbLogin();
 		}
 	}
-	getFbData(toCheck);
+	getFbData(toCheck());
 }
 
 window.fbAsyncInit = function() {
@@ -63,8 +63,8 @@ function toFbLogin() {
 // Here we run a very simple test of the Graph API after login is
 // successful.  See statusChangeCallback() for when this call is made.
 function getFbData(successFn = function(){}) {
-    FB.api('/me/permissions', function(response) {
-    });
+    // FB.api('/me/permissions', function(response) {
+    // });
 
     FB.api('/me?fields=id,name,email', function(response) {
         if (undefined != response.name && undefined != response.email && undefined != response.id) {
@@ -131,7 +131,7 @@ function toSave(story, target) {
     });
 }
 
-$('[data-js="toVote"]').on('click', function () {
+$(document).on('click', '[data-js="toVote"]', function () {
 	let target = $(this);
     let story = $(this).data('id');
     let type = $(this).attr('data-type');

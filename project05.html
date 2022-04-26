@@ -693,28 +693,6 @@
     <!-- SweetAlert  -->
     <script src="js/poll/scripts.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    <script>
-        document.getElementById("demo").addEventListener("click", function () {
-            var SHARE_LINK_URL = window.location.href;
-            var SHARE_LINK_TEXT = '大地女力';
-            var confirmButtonText = '<a href="' +
-                'https://www.facebook.com/sharer.php?u=' +
-                SHARE_LINK_URL + '&quote=' +
-                SHARE_LINK_TEXT +
-                '" target="_blank">分享</a>'
-
-            Swal.fire({
-                title: "投票成功",
-                text: "分享到FB，讓女力故事激勵更多人",
-                icon: "success",
-                showCancelButton: true,
-                cancelButtonText: '取消',
-                confirmButtonText: confirmButtonText,
-            });
-        });
-    </script>
-
-
 </body>
 
 </html>
