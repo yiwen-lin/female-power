@@ -24,7 +24,7 @@ $(document).ready(function() {
 	var path = location.pathname;
 	var directories = path.split("/");
 	var lastDirecotry = directories[(directories.length - 1)];
-	if (lastDirecotry == 'project02.html') {
+	if (lastDirecotry == 'project02.html' || 'project03.html' || 'project04.html') {
 		demo();
 	}
 });
@@ -2871,7 +2871,7 @@ Function Load Via Ajax
 		var path = location.pathname;
 		var directories = path.split("/");
 		var lastDirecotry = directories[(directories.length - 1)];
-		if (lastDirecotry == 'project02.html') {
+		if (lastDirecotry == 'project02.html' || 'project03.html' || 'project04.html') {
 			demo();
 		}
 	}//End Load Via Ajax

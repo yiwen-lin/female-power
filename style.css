@@ -907,8 +907,8 @@ a:hover {
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .vc_row.full {
@@ -3808,12 +3808,35 @@ nav.open {
 	display: block;
 }
 
+.women-map {
+	background-image: url(images/map.jpg) ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+.women-map::before {
+    content: "";
+    display: block;
+    padding-top: 70%;
+}
+
 @media only screen and (max-width: 767px) {
 	.logo-women {
 		width: 100%;
 	}
 	.last p span {
 		display: inline-block;
+	}
+	.women-map {
+		background-image: url(images/map-mb.jpg) ;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% auto;
+	}
+	.women-map::before {
+		content: "";
+		display: block;
+		padding-top: 130%;
 	}
 }
 /* -----------------------slider----------------------- */
@@ -3968,7 +3991,6 @@ nav.open {
 	position: relative;
 	/* border: 1px solid #fff; */
     display: block;
-    height: 200px;
 	padding: 160px 0 60px;
 	text-align: center;
 	font-family: source-han-serif-tc, serif;
@@ -3977,11 +3999,9 @@ nav.open {
 	line-height:1.5;
 	color: #c8b1a1;
 }
-
 .words {
-	/* display: inline-block; */
 	position: relative;
-	height: 100%;
+	height: 200px;
 }
 .words::before {
 	display: inline-block;
@@ -3994,8 +4014,8 @@ nav.open {
 	display: inline-block;
 	content: " ”";
 	position: absolute;
-	bottom: -20px;
-	right: 10px;
+	bottom: 0;
+	right: 0;
 }
 
 .words span {
@@ -4007,6 +4027,26 @@ nav.open {
 	opacity: 0;
 	overflow: hidden;
 	animation: change-text 40s ease-in infinite;
+}
+
+@media only screen and (max-width: 767px) {
+	.animate-block {
+		font-size: 24px;
+	}
+	.words {
+		height: 130px;
+	}
+	.words::before {
+		left: -20px;
+	}
+	.words::after {
+		right: -20px;
+	}
+	.words span {
+		width: 94%;
+		margin-left: 4%;
+	}
+
 }
 
 .words span:nth-child(1) {
