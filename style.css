@@ -3947,6 +3947,7 @@ p.text-serif{
 	width: calc(100% - 10%);
 	position: relative;
     margin: 0 auto;
+	padding-bottom: 250px;
 }
 .report-item {
 	display: inline-block;
@@ -3985,6 +3986,9 @@ p.text-serif{
 
 
 @media only screen and (max-width: 767px) {
+	#itemsWrapperLinks {
+		padding-bottom: 100px;
+	}
 	.report-item {
 		width: 100%;
 		margin:0 auto 50px;
