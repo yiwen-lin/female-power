@@ -692,7 +692,7 @@ p {
 	font-size: 18px;
     font-weight: 200;
     margin-bottom: 30px;
-    line-height: 1.7;
+    line-height: 1.75;
     color: #333;
 }
 
@@ -3457,7 +3457,7 @@ nav.open {
 	}
 
 	p {
-		font-size: 17px;
+		/* font-size: 17px; */
 	}
 
 	#main-page-content {
@@ -3836,7 +3836,7 @@ p.text-serif{
 		width: 100%;
 	}
 	.last p span {
-		display: inline-block;
+		display: inline;
 	}
 	.women-map {
 		background-image: url(images/map-mb.jpg) ;
