@@ -105,9 +105,20 @@ function toSave(story, target) {
         },
         success: function (res) {
             if (true == res.isSuccess && '' != res.no) {
-                if (confirm('恭喜您投票成功，今日投票序號為 ' + res.no + '\n要分享至FB嗎?')) {
-                    window.open('https://www.facebook.com/sharer.php?u=' + SHARE_LINK_URL + '&quote=' + SHARE_LINK_TEXT);
-                }
+                var confirmButtonText = '<a href="'
+                    + 'https://www.facebook.com/sharer.php?u='
+                    + SHARE_LINK_URL + '&quote='
+                    + SHARE_LINK_TEXT
+                    + '" target="_blank">分享</a>'
+
+                Swal.fire({
+                    title: "投票成功",
+                    text: "分享到FB，讓女力故事激勵更多人",
+                    icon: "success",
+                    showCancelButton: true,
+                    cancelButtonText: '取消',
+                    confirmButtonText: confirmButtonText,
+                });
             } else {
                 alert('今天已參加過投票，請隔日再蒞臨參加。');
             }
