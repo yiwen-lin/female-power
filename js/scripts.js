@@ -530,7 +530,7 @@ Function Lazy Load
 				$('body').removeClass('loading')
 				setTimeout( function(){	
 					$('body').removeClass('hidden').removeClass('scale-up').removeClass('scale-none');
-				} , 1500 );
+				} , 0 );
 			},
 			waitForAll: true
 		});	
