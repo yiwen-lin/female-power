@@ -1286,7 +1286,7 @@ main {
 }
 
 #ball p.first {
-	padding-top: 22px;
+	padding-top: 28px;
 }
 
 .light-content #ball i,
@@ -3776,7 +3776,6 @@ nav.open {
 }
 
 /* ---------------------start------------------------- */
-
 .op1 span,
 .last p span {
 	display: block;
@@ -3823,6 +3822,12 @@ p.text-serif{
 	font-family: source-han-serif-tc, serif;
 	font-weight: 500;
 	text-align: center;
+}
+.team h5 {
+	margin-bottom: 4px;
+}
+.team p {
+	font-size: 16px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -4112,16 +4117,3 @@ p.text-serif{
 	}
 }
 /* -----------------------animate end----------------------- */
-
-
-button#demo {
-	display: block;
-	margin: 20px;
-	padding: 10px 30px;
-	font-size: 20px;
-	color: white;
-	background-color: #4ebeba;
-	border: none;
-	border-radius: 5px;
-	
-  } 

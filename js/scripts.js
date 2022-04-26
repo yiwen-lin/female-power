@@ -48,7 +48,7 @@ Function Page Load
 			var $this = $(this);			
 			TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:$("body").data('primary-color'), backgroundColor:$("body").data('primary-color')});
 			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
-			$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
+			$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' );				
 		});
 							
 		$(".preloader-wrap").on('mouseleave', function() {					
@@ -429,7 +429,7 @@ Page Load Actions
 			var $this = $(this);			
 			TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:$("body").data('primary-color'), backgroundColor:$("body").data('primary-color')});
 			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
-			$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
+			$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' );				
 		});
 							
 		$(".next-ajax-link-page").on('mouseleave', function() {					
@@ -475,7 +475,7 @@ Page Load Actions
 		// Project Page Navigation Load Events
 		$("#project-nav .next-ajax-link-project").mouseenter(function(e) {	
 			var $this = $(this);		
-			$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );
+			$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' );
 			TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:$("body").data('primary-color'), backgroundColor:$("body").data('primary-color')});			
 			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});			
 		});
@@ -894,7 +894,7 @@ Function Showcase Webgl Slider
 					var $this = $(this);			
 					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:$("body").data('primary-color'), backgroundColor:$("body").data('primary-color')});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
-					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
+					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' );				
 				});
 									
 				$("#showcase-slider-webgl-holder .slide-title").on('mouseleave', function() {					
@@ -1244,7 +1244,7 @@ Function Showcase Slider
 					var $this = $(this);			
 					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:$("body").data('primary-color'), backgroundColor:$("body").data('primary-color')});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
-					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
+					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' );				
 				});
 									
 				$("#showcase-slider-holder .slide-title").on('mouseleave', function() {					
@@ -1443,7 +1443,7 @@ Function Showcase Carousel
 					var $this = $(this);			
 					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:$("body").data('primary-color'), backgroundColor:$("body").data('primary-color')});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
-					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
+					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' );				
 				});
 									
 				$("#showcase-carousel-holder .trigger-slide-link").on('mouseleave', function() {					
@@ -1625,7 +1625,7 @@ Function Floating Lists
 					var $this = $(this);			
 					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:$("body").data('primary-color'), backgroundColor:$("body").data('primary-color')});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
-					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
+					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' );				
 				}).on('mouseleave', function() {					
 					TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
@@ -1876,7 +1876,7 @@ Function Portfolio
 					});
 					$(".item-image").mouseenter(function(e) {	
 						TweenMax.to('#ball', 0.2,{borderWidth:"0px",scale:1,borderColor:'transparent'});
-						TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 4, left: 4});
+						TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 4});
 					});						
 					$(".item-image").mouseleave(function(e) {
 						TweenMax.to('#ball', 0.3,{borderWidth:"4px",scale:0.5,borderColor:'#999999'});
@@ -1964,7 +1964,7 @@ Function Shortcodes
 					var $this = $(this);			
 					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:$("body").data('primary-color'), backgroundColor:$("body").data('primary-color')});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
-					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
+					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' );				
 				});
 									
 				$(".random-collage .rc-slide .item-wrap-image").on('mouseleave', function() {					
