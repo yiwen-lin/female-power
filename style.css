@@ -696,6 +696,7 @@ p {
     margin-bottom: 30px;
     line-height: 1.75;
     color: #333;
+	letter-spacing: 1px;
 }
 
 
@@ -3815,12 +3816,45 @@ nav.open {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% auto;
+	position: relative;
+	width: 900px;
+	margin: auto;
+	/* border:1px solid #fff; */
 }
 .women-map::before {
     content: "";
     display: block;
-    padding-top: 70%;
+    padding-top: 80%;
 }
+
+.women-map .map-link {
+	position:absolute;
+	width: 330px;
+	height: 200px;
+	/* border:1px solid #fff; */
+}
+
+.women-map .map-link a {
+	display: block;
+    height: 100%;
+}
+
+.map-link-pj2 {
+	top: 100px;
+	left: 0px;
+}
+
+.map-link-pj3 {
+	bottom: 296px;
+	right: 40px;
+}
+
+.map-link-pj4 {
+	bottom: 70px;
+	right: 40px;
+}
+
+
 p.text-serif{
 	font-family: source-han-serif-tc, serif;
 	font-weight: 500;
@@ -3845,11 +3879,36 @@ p.text-serif{
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 100% auto;
+		width: 100%;
 	}
 	.women-map::before {
 		content: "";
 		display: block;
 		padding-top: 130%;
+	}
+
+	.women-map .map-link {
+		position:absolute;
+		width: 220px;
+		height: 130px;
+	}
+	
+	.map-link-pj2 {
+		top: 20px;
+		left: 0px;
+	}
+	
+	.map-link-pj3 {
+		top: 170px;
+		left: 0px;
+		bottom: inherit;
+		right: inherit;
+	}
+	
+	.map-link-pj4 {
+		left: 0px;
+		bottom: 27px;
+		right: inherit;
 	}
 }
 /* -----------------------slider----------------------- */
