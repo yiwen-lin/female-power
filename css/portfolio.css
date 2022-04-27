@@ -850,7 +850,7 @@
 		object-position: center; 
 		object-fit: cover;
 	}
-	
+
 	.portfolio .item-image {
 		cursor:pointer;		
 	}
@@ -1940,6 +1940,20 @@
 	.mb-block {
 		display: block;
 		font-family: source-han-sans-cjk-tc, roboto, sans-serif;
+	}
+
+
+	.item-image {
+		object-position: center 25%; 
+	}
+	.item-image.item-image-1 {
+		object-position: center 45%;
+	}
+	.item-image.item-image-2 {
+		object-position: center 70%;
+	}
+	.item-image.item-image-3 {
+		object-position: center 15%;
 	}
 }
 

@@ -4113,12 +4113,12 @@ p.text-serif{
 		transform: translateY(0px);
 	}
 
-	10% {
+	8% {
 		opacity: 1;
 		transform: translateY(0px);
 	}
 
-	12% {
+	10% {
 		opacity: 0;
 		transform: translateY(0px);
 	}
