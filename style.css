@@ -617,11 +617,13 @@ h5 {
 	font-size: 16px;
 	line-height: 28px;
 	margin-left: -1px;
+	font-weight: 300;
 }
 
 h6 {
 	font-size: 14px;
 	line-height: 24px;
+	font-weight: 300;
 }
 
 .no-margins {
@@ -3787,7 +3789,7 @@ nav.open {
 	margin-bottom: 36px;
 }
 .point-s {
-	font-weight: 400;
+	font-weight: 300;
 	color:#b06a48;
 	letter-spacing: 2px;
 	font-size: 17px;
@@ -4045,7 +4047,7 @@ p.text-serif{
 	top: 0;
 	left: 0;
 	width: 84%;
-    margin-left: 8%;
+    margin-left: 10%;
 	opacity: 0;
 	overflow: hidden;
 	animation: change-text 40s ease-in infinite;
@@ -4066,7 +4068,7 @@ p.text-serif{
 	}
 	.words span {
 		width: 94%;
-		margin-left: 4%;
+		margin-left: 6%;
 	}
 
 }
