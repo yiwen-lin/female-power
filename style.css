@@ -3894,15 +3894,15 @@ p.text-serif{
 	}
 	
 	.map-link-pj2 {
-		top: 20px;
-		left: 0px;
-	}
-	
-	.map-link-pj3 {
 		top: 170px;
 		left: 0px;
 		bottom: inherit;
 		right: inherit;
+	}
+	
+	.map-link-pj3 {
+		top: 20px;
+    	left: 0px;
 	}
 	
 	.map-link-pj4 {
