@@ -3800,6 +3800,9 @@ nav.open {
 	display:inline-block;
 	border-bottom: 1px solid #999;
 }
+.border-link + .border-link {
+	margin-left: 16px;
+}
 .border-link a {
 	color:#999;
 }
@@ -4109,7 +4112,7 @@ p.text-serif{
     margin-left: 10%;
 	opacity: 0;
 	overflow: hidden;
-	animation: change-text 40s ease-in infinite;
+	animation: change-text 50s ease-in infinite;
 }
 
 @media only screen and (max-width: 767px) {
@@ -4136,31 +4139,31 @@ p.text-serif{
 	animation-delay: 0s;
 }
 .words span:nth-child(2) {
-	animation-delay: 4s;
+	animation-delay: 5s;
 }
 .words span:nth-child(3) {
-	animation-delay: 8s;
+	animation-delay: 10s;
 }
 .words span:nth-child(4) {
-	animation-delay: 12s;
+	animation-delay: 15s;
 }
 .words span:nth-child(5) {
-	animation-delay: 16s;
-}
-.words span:nth-child(6) {
 	animation-delay: 20s;
 }
+.words span:nth-child(6) {
+	animation-delay: 25s;
+}
 .words span:nth-child(7) {
-	animation-delay: 24s;
+	animation-delay: 30s;
 }
 .words span:nth-child(8) {
-	animation-delay: 28s;
+	animation-delay: 35s;
 }
 .words span:nth-child(9) {
-	animation-delay: 32s;
+	animation-delay: 40s;
 }
 .words span:nth-child(10) {
-	animation-delay: 36s;
+	animation-delay: 45s;
 } 
 
 @keyframes change-text {
